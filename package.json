@@ -1,0 +1,40 @@
+{
+  "name": "nexus-tutorial",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Flavian DESVERNE",
+  "description": "Final code of the Nexus tutorial",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nexus dev",
+    "build": "nexus build",
+    "db:save": "yarn prisma migrate save --experimental",
+    "db:up": "yarn prisma migrate up --experimental",
+    "test": "jest tests/"
+  },
+  "keywords": [],
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "nexus": "0.24.2",
+    "nexus-plugin-prisma": "0.10.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jest": "25.2.3",
+    "@types/jsonwebtoken": "^8.5.0",
+    "jest": "25.5.4",
+    "nanoid": "3.1.10",
+    "pg": "8.2.1",
+    "prettier": "2.0.5",
+    "ts-jest": "25.5.1"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "./tests/nexus-test-environment.js"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  }
+}
